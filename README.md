@@ -26,6 +26,7 @@ so that I can easily identify events organized in different cities and plan acco
 ### Scenarios 
 
 * *SCENARIO 1*
+
 Feature: Show/Hide Event Details
 
 Scenario: User wants to show event details
