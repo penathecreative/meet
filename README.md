@@ -87,7 +87,7 @@ Scenario: User wants to see chart for upcoming events in cities
 
 
 
-* *USE OF SERVERLESS FUNCTION IN THE MEET APP* *
+* *USE OF SERVERLESS FUNCTION IN THE MEET APP*
 
 A serverless functions could be utilized to handle backend logic and provide dynamic functionality without the need for managing server infrastructure. For example, when a user requests to show/hide event details or specify the number of events to view, serverless functions could process these requests by retrieving or manipulating data from a database or other external sources. Similarly, when a user wants to use the app offline, serverless functions could facilitate data caching and synchronization between the client and server.
 
