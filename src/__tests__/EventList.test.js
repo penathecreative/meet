@@ -11,7 +11,7 @@ describe("<EventList /> component", () => {
   });
 
   test('has an element with "list" role', () => {
-    expect(EventListComponent.queryByRole("listitem")).toBeInTheDocument();
+    expect(EventListComponent.queryByRole("list")).toBeInTheDocument();
   });
 
   test("renders correct number of events", async () => {

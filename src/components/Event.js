@@ -12,8 +12,8 @@ const Event = ({ event }) => {
   return (
     <div>
       <h2>{event.summary}</h2>
-      <p>Start Time: {event.created}</p>
-      <p>Location: {event.location}</p>
+      <p>{event.created}</p>
+      <p>{event.location}</p>
       <button
         onClick={handleToggleDetails}
         data-testid="show-details-button"
@@ -21,7 +21,10 @@ const Event = ({ event }) => {
         {showDetails ? "hide details" : "show details"}
       </button>
       {showDetails && (
-        <div data-testid="event-details">{/* Render event details here */}</div>
+        <div className="details">
+          <h4>event details</h4>
+          <p>{event.description}</p>
+        </div>
       )}
     </div>
   );
