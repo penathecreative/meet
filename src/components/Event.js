@@ -10,23 +10,25 @@ const Event = ({ event }) => {
   };
 
   return (
-    <div>
-      <h2>{event.summary}</h2>
-      <p>{event.created}</p>
-      <p>{event.location}</p>
-      <button
-        onClick={handleToggleDetails}
-        data-testid="show-details-button"
-      >
-        {showDetails ? "hide details" : "show details"}
-      </button>
-      {showDetails && (
-        <div className="details">
-          <h4>event details</h4>
-          <p>{event.description}</p>
-        </div>
-      )}
-    </div>
+    <li>
+      <div>
+        <h2>{event.summary}</h2>
+        <p>{event.created}</p>
+        <p>{event.location}</p>
+        <button
+          onClick={handleToggleDetails}
+          data-testid="show-details-button"
+        >
+          {showDetails ? "hide details" : "show details"}
+        </button>
+        {showDetails && (
+          <div className="details">
+            <h4>event details</h4>
+            <p>{event.description}</p>
+          </div>
+        )}
+      </div>
+    </li>
   );
 };
 
