@@ -16,13 +16,13 @@ describe("<NumberOfEvents /> component", () => {
   });
 
   test("value changes accordingly when user types", async () => {
-    const setNumberOfEvents = jest.fn(); // Mock setNumberOfEvents function
+    const setCurrentNOE = jest.fn(); // Mock setCurrentNOE function
     const { container } = render(
-      <NumberOfEvents setNumberOfEvents={setNumberOfEvents} />
+      <NumberOfEvents setCurrentNOE={setCurrentNOE} />
     );
     const inputElement = container.querySelector('input[type="text"]');
     await userEvent.type(inputElement, "{backspace}{backspace}10");
     expect(inputElement).toHaveValue("10");
-    expect(setNumberOfEvents).toHaveBeenCalledWith("10"); // Ensure setNumberOfEvents was called with the updated value
+    expect(setCurrentNOE).toHaveBeenCalledWith("10"); // Ensure setCurrentNOE was called with the updated value
   });
 });
