@@ -83,7 +83,7 @@ const removeQuery = () => {
 const getToken = async (code) => {
   const encodeCode = encodeURIComponent(code);
   const response = await fetch(
-    "https://sgdwv5xsm7.execute-api.eu-central-1.amazonaws.com/dev/api/get-events" +
+    " https://sgdwv5xsm7.execute-api.eu-central-1.amazonaws.com/dev/api/token" +
       "/" +
       encodeCode
   );
