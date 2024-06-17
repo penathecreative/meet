@@ -10,12 +10,13 @@ const Event = ({ event }) => {
   };
 
   return (
-    <li>
+    <li className="event">
       <div>
         <h2>{event.summary}</h2>
         <p>{event.created}</p>
         <p>{event.location}</p>
         <button
+          className="details-btn"
           onClick={handleToggleDetails}
           data-testid="show-details-button"
         >

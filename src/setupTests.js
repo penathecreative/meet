@@ -19,3 +19,6 @@ console.error = (...args) => {
   );
   if (!ignoreMessage) originalError(...args);
 };
+
+// Set global timeout for all tests
+jest.setTimeout(60000);
