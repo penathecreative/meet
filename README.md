@@ -3,14 +3,14 @@
 A serverless Progressive Web Application (PWA) built with React, using a Test-Driven Development (TDD) approach.  
 The application integrates with the Google Calendar API to display upcoming events and provides offline access and data visualization features.
 
----
+
 
 ## 🚀 Overview
 
 Meet App is designed to help users discover and manage events efficiently.  
 It leverages modern web technologies and testing practices to ensure reliability, performance, and a smooth user experience.
 
----
+
 
 ## 🧪 Testing & Quality Approach
 
@@ -22,7 +22,7 @@ This project was developed using a **Test-Driven Development (TDD)** methodology
 - API responses were tested and validated using external data (Google Calendar API)
 - Debugging and issue resolution were part of the development lifecycle
 
----
+
 
 ## 📌 User Stories
 
@@ -32,7 +32,7 @@ This project was developed using a **Test-Driven Development (TDD)** methodology
 4. As a user, I should be able to add the app shortcut to my home screen...
 5. As a user, I should be able to see a chart displaying upcoming events...
 
----
+
 
 ## 🧩 Test Scenarios (BDD)
 
@@ -59,7 +59,7 @@ This project was developed using a **Test-Driven Development (TDD)** methodology
 - Given I access the chart section  
 - Then I see events by city  
 
----
+
 
 ## ⚙️ Tech Stack
 
@@ -77,7 +77,7 @@ This project was developed using a **Test-Driven Development (TDD)** methodology
 - Jest-Cucumber (BDD)
 - Puppeteer (End-to-End Testing)
 
----
+
 
 ## 🔍 Key Features
 
@@ -87,13 +87,13 @@ This project was developed using a **Test-Driven Development (TDD)** methodology
 - Add to Home Screen
 - Data Visualization (Charts)
 
----
+
 
 ## ☁️ Serverless Architecture
 
 Serverless functions are used to handle backend logic and API communication, enabling scalability and reducing infrastructure management.
 
----
+
 
 ## 🧠 What I Learned
 
@@ -103,7 +103,7 @@ Serverless functions are used to handle backend logic and API communication, ena
 - Building offline-first applications with service workers
 - Debugging and improving application reliability
 
----
+
 
 ## 📦 Installation
 
