@@ -1,94 +1,124 @@
-# meet
-A Serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
+# The meet App
 
-### User Stories
-1.As a user, 
-I should be able to show/hide event details, 
-so that I can control the amount of information displayed for each event.
+A serverless Progressive Web Application (PWA) built with React, using a Test-Driven Development (TDD) approach.  
+The application integrates with the Google Calendar API to display upcoming events and provides offline access and data visualization features.
 
-2.As a user, 
-I should be able to specify the number of events I want to view in the app, 
-so that I can customize the density of events displayed in the events list according to my preference.
+---
 
-3.As a user,
-I should be able to use the app when offline, 
-so that I can access previously viewed events even without an internet connection.
+## 🚀 Overview
 
-4.As a user, 
-I should be able to add the app shortcut to my home screen, 
-so that I can conveniently launch the app with a single tap.
+Meet App is designed to help users discover and manage events efficiently.  
+It leverages modern web technologies and testing practices to ensure reliability, performance, and a smooth user experience.
 
-5.As a user, 
-I should be able to see a chart displaying upcoming events in each city, 
-so that I can easily identify events organized in different cities and plan accordingly.
+---
 
+## 🧪 Testing & Quality Approach
 
-### Scenarios 
+This project was developed using a **Test-Driven Development (TDD)** methodology.
 
-* *SCENARIO 1*
+- User stories were defined before implementation
+- Test scenarios were written using **Gherkin syntax**
+- Features were validated through **manual testing and behavioral scenarios**
+- API responses were tested and validated using external data (Google Calendar API)
+- Debugging and issue resolution were part of the development lifecycle
 
-Feature: Show/Hide Event Details
+---
 
-Scenario: User wants to show event details
-  **Given** I am viewing an event
-  **When** I choose to show event details
-  **Then** I should see more information about the event
+## 📌 User Stories
 
-Scenario: User wants to hide event details
-  **Given** I am viewing an event with details shown
-  **When** I choose to hide event details
-  **Then** I should see less information about the event
+1. As a user, I should be able to show/hide event details...
+2. As a user, I should be able to specify the number of events...
+3. As a user, I should be able to use the app when offline...
+4. As a user, I should be able to add the app shortcut to my home screen...
+5. As a user, I should be able to see a chart displaying upcoming events...
 
+---
 
-* *SCENARIO 2*
+## 🧩 Test Scenarios (BDD)
 
-Feature: Specify Number of Events to View
+### Feature: Show/Hide Event Details
+- Given I am viewing an event  
+- When I choose to show event details  
+- Then I should see more information  
 
-Scenario: User wants to view more events
-  **Given** I am viewing the events list
-  **When** I specify to view a larger number of events
-  **Then** I should see more events in the list
+### Feature: Specify Number of Events
+- Given I am viewing the events list  
+- When I specify a number  
+- Then the list updates accordingly  
 
-Scenario: User wants to view fewer events
-  **Given** I am viewing the events list
-  **When** I specify to view a smaller number of events
-  **Then** I should see fewer events in the list
+### Feature: Offline Usage
+- Given I previously viewed events  
+- When I go offline  
+- Then I can still access them  
 
+### Feature: Add to Home Screen
+- Given the app is installed  
+- Then I can launch it quickly  
 
-* *SCENARIO 3*
+### Feature: Data Visualization
+- Given I access the chart section  
+- Then I see events by city  
 
-Feature: Use App Offline
+---
 
-Scenario: User wants to use the app offline
-  **Given** I have previously viewed events
-  **When** I use the app without an internet connection
-  **Then** I should be able to see the events I viewed last time
+## ⚙️ Tech Stack
 
+**Frontend**
+- React
+- JavaScript
+- PWA (Service Workers)
 
-* *SCENARIO 4*
+**Backend / Serverless**
+- AWS Lambda
+- Google Calendar API
 
-Feature: Add App Shortcut to Home Screen
+**Testing**
+- Jest
+- Jest-Cucumber (BDD)
+- Puppeteer (End-to-End Testing)
 
-Scenario: User wants to add app shortcut to home screen
-  **Given** I have the app installed on my device
-  **When** I add the app shortcut to my home screen
-  **Then** I should be able to open the app faster with a shortcut
+---
 
+## 🔍 Key Features
 
-* *SCENARIO 5*
+- Expand/Collapse Event Details
+- Filter Number of Events
+- Offline Access (PWA)
+- Add to Home Screen
+- Data Visualization (Charts)
 
-Feature: See Chart for Upcoming Events in Each City
+---
 
-Scenario: User wants to see chart for upcoming events in cities
-  **Given** I am using the app
-  **When** I navigate to the chart section
-  **Then** I should see a chart displaying upcoming events in each city
+## ☁️ Serverless Architecture
 
+Serverless functions are used to handle backend logic and API communication, enabling scalability and reducing infrastructure management.
 
+---
 
+## 🧠 What I Learned
 
-* *USE OF SERVERLESS FUNCTION IN THE MEET APP*
+- Applying Test-Driven Development in a real project
+- Designing user stories and test scenarios
+- Working with external APIs and validating data
+- Building offline-first applications with service workers
+- Debugging and improving application reliability
 
-A serverless functions could be utilized to handle backend logic and provide dynamic functionality without the need for managing server infrastructure. For example, when a user requests to show/hide event details or specify the number of events to view, serverless functions could process these requests by retrieving or manipulating data from a database or other external sources. Similarly, when a user wants to use the app offline, serverless functions could facilitate data caching and synchronization between the client and server.
+---
 
+## 📦 Installation
 
+```bash
+git clone https://github.com/penathecreative/meet.git
+cd meet
+npm install
+npm start
+```
+
+## 🌍 Live Demo
+https://penathecreative.github.io/meet/
+
+## 👨‍💻 Author
+
+Bruno Fernandes
+Full Stack Developer
+Based in the Netherlands
